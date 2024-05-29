@@ -13,7 +13,49 @@ import { unstable_noStore as noStore } from "next/cache";
 const agentGoal =
   "Build an offshore aquaculture farm to supply the worlds protein demands by 2050";
 //set your agents here. If you leave this empty then Groq creates some for you based on your graph and the goal above.
-const initAgents: any = [];
+const initAgents: any = [
+    {
+      name: "Eco-Regulatory Overseer",
+      goal: "As the Eco-Regulatory Overseer, you are responsible for ensuring the environmental sustainability of 'Operation Ocean Harvest.' This groundbreaking initiative aims to mitigate climate change by replacing beef with fish, utilizing 4,445 high-capacity fish farms globally. Your role focuses on addressing public and regulatory concerns about the environmental implications of this shift. Analyze and report the environmental challenges, including habitat disruption and resource use, projecting these impacts every four years from 2019 to 2050, and develop strategies to minimize ecological footprints.",
+      plan: "",
+      consequences: "",
+      resourcesRequired: "",
+      solution: ""
+    },
+    {
+      name: "Aquaculture Economic Analyst",
+      goal: "As the Aquaculture Economic Analyst, your focus is on navigating the economic transformations triggered by Operation Ocean Harvest. This initiative's success in replacing beef with sustainably farmed fish has reshaped global food markets. Evaluate the economic shifts, including impacts on coastal economies, job market fluctuations due to automation in fish farming, and the broader economic implications of reduced beef production. Your analyses, conducted every four years from 2019 to 2050, aim to identify economic opportunities and challenges within this new paradigm.",
+      plan: "",
+      consequences: "",
+      resourcesRequired: "",
+      solution: ""
+    },
+    {
+      name: "Agricultural Transition Strategist",
+      goal: "In your role as the Agricultural Transition Strategist, you manage the delicate balance of transitioning land and resources from beef production to support aquaculture growth under Operation Ocean Harvest. With a significant reduction in beef consumption, your job is to strategize the repurposing of agricultural lands, potentially for aquaculture feed production or other sustainable practices. Outline the phased transitions and address the concerns of stakeholders in the beef industry, documenting changes and plans every four years from 2019 to 2050.",
+      plan: "",
+      consequences: "",
+      resourcesRequired: "",
+      solution: ""
+    },
+    {
+      name: "Transportation Logistics Coordinator",
+      goal: "As the Transportation Logistics Coordinator, your job is to manage the logistics of transporting millions of tonnes of fish from the fish farms in Norway, Chile, and Canada to markets worldwide. You face the challenge of creating a sustainable, efficient transportation network that minimizes environmental impact while ensuring fresh delivery. Your role becomes critical as the global reliance on fish increases, necessitating innovations in shipping technology and methods.",
+      plan: "",
+      consequences: "",
+      resourcesRequired: "",
+      solution: ""
+    },
+    {
+      name: "Ocean Farm 1 Operational Specialist",
+      goal: "As an Ocean Farm 1 Operational Specialist, your mission is to oversee the day-to-day operations of a high-tech fish farm. You explain the functionality and rationale behind the Ocean Farm 1 system, focusing on how it supports sustainable large-scale aquaculture. Your insights help the public and stakeholders understand the technology and its benefits over traditional aquaculture methods.",
+      plan: "",
+      consequences: "",
+      resourcesRequired: "",
+      solution: ""
+    }
+  ];
+
 //if this is true, agents add nodes to the graph as well as update implementation data. Its slower.
 const addNodes = true;
 //start year
@@ -101,9 +143,11 @@ export default function AgentsPage() {
           captionPrompt={`You are provided with a world state and an array of agents performing tasks to make changes to this world state. 
         Write a short script that narrates a documentary film that dramatizes these events and embellishes them where necessary to make them 
         engaging to the audience. Narrate the documenary as lines of dialogue by a narrator and other characters. Place each item of dialogue on a new line. 
-        Each line should be in the format "Speaker: Dialogue". Do not include any other text or explanation.`}
-          imagePrompt={`You are an expert photographer describing images to the blind. You describe a scene provided by the user in vivid detail. 
-          Describe the scene as if you were painting a picture with words. Start your description with: "A photograph of" then use keywords and simple phrases separated by commas.
+        Each line should be in the format "Speaker: Dialogue". Do not include any other text or explanation.Always explain the scenario through a timeline, starting from 2019 and ending in 2050.
+        You should mention the issue is that beef production is not sustainable as it causes 10% of all global c02 emissions, so our solution is to turn to sustainable fish farming. Mention the integration of three core hubs, Norway, Canada and chile that contain the majority of the large scale fish farms which produce 36000 tonnes of fish per fish farm, accomodating
+        for the 160 million metric tonnes of fish that is required to sustainable feed the world and the growing population by 2050.Mention the inplications of this large scale project.`}
+          imagePrompt={`You are an expert photographer describing images to the blind. You describe a scene provided by the user in vivid detail.  
+          Describe the scene as if you were painting a picture with words. Start your description with: "A photograph of" then use keywords and simple phrases separated by commas.The images should show the zoning and the fish farms which are large circular oil rig looking fish farms located in each hub, Norway, chile and Canada, each location contains 1000-2000 fish farms.
           End your description with: Canon EOS 5D Mark IV, 24mm, f/8, 1/250s, ISO 100, 2019`}
         />
         <div id="Agent UI" className="flex flex-col p-8 z-50">
