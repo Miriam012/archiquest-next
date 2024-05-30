@@ -59,7 +59,6 @@ const agentGoal =
   
 //if this is true, agents add nodes to the graph as well as update implementation data. Its slower.
 const addNodes = true;
->>>>>>> Stashed changes
 
 //Demo of running multiple agents that all compete for resources
 export default function AgentsPage() {
@@ -79,14 +78,13 @@ export default function AgentsPage() {
         requestString,
         1024,
         `The user will provide you with an implementation of a specific concept in the form of a knowledge graph together with an array of agents working towards specific goals within this graph.
-<<<<<<< Updated upstream
           Your task is to update the knowledge graph to reflect the changes made by the agents.
           Generate an array of new Nodes and an array of new Edges to represent any concepts not already modelled by the knowledge graph.
           Update any existing nodes affected by the agents using a state map. Generate a new state object for each affected node using the node ID as the key and the new state as the value.
           Return your response in JSON in the format {newNodes:Node[], newEdges:Edge[], newStates:{[id:string]: string}}.Only return a single valid JSON object with no other text or explanation.`,
         true,
         "llama3-8b-8192"
-=======
+
 
       );
       const graphJSON = JSON.parse(newStates);
