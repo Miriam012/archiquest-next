@@ -11,9 +11,10 @@ export const dynamic = "force-dynamic";
 //This is new - just provide a high level goal and groq will figure out how to make agents
 const agentGoal =
   "Build an offshore aquaculture farm to supply the worlds protein demands by 2050";
-//set your agents here. If you leave this empty then Groq creates some for you based on your graph and the goal above.
-const initAgents: any = [
 
+//set your agents here. If you leave this empty then Groq creates some for you based on your graph and the goal above.
+
+  const initAgents = [
     {
       name: "Eco-Regulatory Overseer",
       goal: "As the Eco-Regulatory Overseer, you are responsible for ensuring the environmental sustainability of 'Operation Ocean Harvest.' This groundbreaking initiative aims to mitigate climate change by replacing beef with fish, utilizing 4,445 high-capacity fish farms globally. Your role focuses on addressing public and regulatory concerns about the environmental implications of this shift. Analyze and report the environmental challenges, including habitat disruption and resource use, projecting these impacts every four years from 2019 to 2050, and develop strategies to minimize ecological footprints.",
@@ -55,7 +56,10 @@ const initAgents: any = [
       solution: ""
     }
   ];
-
+  
+//if this is true, agents add nodes to the graph as well as update implementation data. Its slower.
+const addNodes = true;
+>>>>>>> Stashed changes
 
 //Demo of running multiple agents that all compete for resources
 export default function AgentsPage() {
@@ -75,12 +79,15 @@ export default function AgentsPage() {
         requestString,
         1024,
         `The user will provide you with an implementation of a specific concept in the form of a knowledge graph together with an array of agents working towards specific goals within this graph.
+<<<<<<< Updated upstream
           Your task is to update the knowledge graph to reflect the changes made by the agents.
           Generate an array of new Nodes and an array of new Edges to represent any concepts not already modelled by the knowledge graph.
           Update any existing nodes affected by the agents using a state map. Generate a new state object for each affected node using the node ID as the key and the new state as the value.
           Return your response in JSON in the format {newNodes:Node[], newEdges:Edge[], newStates:{[id:string]: string}}.Only return a single valid JSON object with no other text or explanation.`,
         true,
         "llama3-8b-8192"
+=======
+
       );
       const graphJSON = JSON.parse(newStates);
       console.log(graphJSON);
@@ -122,7 +129,8 @@ export default function AgentsPage() {
         You should mention the integration of three core hubs, Norway, Canada and chile that contain the majority of the large scale fish farms which produce 36000 tonnes of fish per fish farm, accomodating
         for the 160 million metric tonnes of fish that is required to sustainable feed the world and the growing population by 2050.Mention the inplications of this large scale project.`}
           imagePrompt={`You are an expert photographer describing images to the blind. You describe a scene provided by the user in vivid detail. 
-          Describe the scene as if you were painting a picture with words. Start your description with: "A photograph of" then use keywords and simple phrases separated by commas.
+          Describe the scene as if you were painting a picture with words.The whole documentry is about the replacing beef with fish by 2050 to create a more sustainable future, do not generate anything outside of this concept line.
+          Start your description with: "A photograph of" then use keywords and simple phrases separated by commas.
           End your description with: Canon EOS 5D Mark IV, 24mm, f/8, 1/250s, ISO 100, 2019`}
         />
         <div id="Agent UI" className="flex flex-col p-8 z-50">
