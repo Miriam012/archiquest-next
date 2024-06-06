@@ -37,7 +37,7 @@ export default function Animation({
       //improve image description
       const imageDescription = await generateDescription();
       const url = await generateImageFal(
-        imageDescription,
+       `${imageDescription} in the setting of the fish farm growth design`, 
         { width: width, height: height },
         "hyper-sdxl"
       );
