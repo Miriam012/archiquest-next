@@ -149,8 +149,6 @@ export default function AgentsPage() {
           
         imagePrompt={`You are an expert photographer describing images to the blind. You describe a scene provided by the user in vivid detail.  
           Describe the scene as if you were painting a picture with words. Start your description with: "A photograph of" then use keywords and simple phrases separated by commas.
-         Generate a series of images showing the evolution of Ocean Farm 1 fish farms. Start with a simple, modular fish farm structure floating on the ocean, with basic cylindrical shapes connected by walkways within each circle. Initially, the design is minimal, focusing on basic fish containment via netting and small terraces. As the design evolves, incorporate advanced materials for durability, such as steel trusses and walkways become more developed with an enclosed room at the centre of the circular fish farm, and renewable energy sources such as solar panels and wind turbines mounted on the structures. Introduce autonomous systems for feeding and monitoring fish health, show some screens and thing monitoring the water levels and fish health. The final design should depict a large, circular oil rig-like looking structure painted in yellow, floating on the surface of ocean, it should contain the trusses, walkways, rooms and monitoring systems all in the one image, You should also depict how the processing on the hubs of norway, chile and canada looks like, with cranes carrying the fish shipments off the boats and into the warehouse facilities.
-
           End your description with: Canon EOS 5D Mark IV, 24mm, f/8, 1/250s, ISO 100, 2019`}
         />
         <div id="Agent UI" className="flex flex-col p-8 z-50">
