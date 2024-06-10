@@ -10,8 +10,38 @@ body {
   background: rgb(240, 240, 240, 1);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+@keyframes floatIn {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
+
+@keyframes floatOut {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+.floating-text {
+  animation: floatIn 1s forwards, floatOut 1s forwards 4s;
+}
+
+body {
+  font-family: 'Archivo Black', sans-serif;
+}
+
+
+
+
