@@ -61,7 +61,7 @@ export default function Home() {
         </Link>
       </div>
 
-      <div className={`text-white text-center text-sm mt-16 mb-16 z-10 w-full flex justify-center ${floatingTextVisible ? 'floating-text' : ''}`}>
+      <div className={`absolute bottom-0 text-white text-center text-sm p-4 z-10 w-full flex justify-center ${floatingTextVisible ? 'floating-text' : ''}`}>
         <div>
           THIS JOURNEY TAKES YOU BACK 30 YEARS THROUGH THE EYES OF A DEDICATED TEAM THAT INITIATED A GROUNDBREAKING PROJECT TO CHANGE THE WORLD. EXPERIENCE HOW THEY OVERCAME IMMENSE CHALLENGES TO DESIGN FISH FARMS THAT SUSTAIN THE GLOBAL POPULATION.
           <br />
