@@ -180,10 +180,10 @@ const InformationPage = () => {
             In order to compensate, an additional <BoldText>160 million metric tonnes</BoldText> of fish would need to be produced annually. This is hard to address due to the fact that the current rate of salmon production would need to skyrocket, as the current production is approximately 2.5 million metric tonnes.
           </Paragraph>
           <Paragraph>
-            Our solution is to create large-scale fish farm vessels, which will be zoned and maintained in three locations: Norway, Chile, and Canada. These countries will become hubs that will facilitate the world's new demand for fish, leveraging their geographical advantages to serve different consumer markets.
+            Our solution is to create large-scale fish farm vessels, which will be zoned and maintained in three locations: Norway, Chile, and Canada. These countries will become hubs that will facilitate the world&apos;s new demand for fish, leveraging their geographical advantages to serve different consumer markets.
           </Paragraph>
           <Paragraph>
-            While transitioning to fish farming is far more sustainable it requires significant investment in advanced aquaculture systems. We’ll also require sustainable fish feed to mitigate pollution due to uneaten feed and fish waste while ensuring we use renewable energy sources. Transportation emissions from global fish distribution is also a concern, as the cost to mitigate these factors are high. Additionally, repurposing the agricultural land from beef production could disrupt local economies and necessitate retraining workers for new roles in fish farming.
+            While transitioning to fish farming is far more sustainable it requires significant investment in advanced aquaculture systems. We&apos;ll also require sustainable fish feed to mitigate pollution due to uneaten feed and fish waste while ensuring we use renewable energy sources. Transportation emissions from global fish distribution is also a concern, as the cost to mitigate these factors are high. Additionally, repurposing the agricultural land from beef production could disrupt local economies and necessitate retraining workers for new roles in fish farming.
           </Paragraph>
         </TextContent>
         <GalleryContent>
