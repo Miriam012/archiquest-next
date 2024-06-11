@@ -37,10 +37,10 @@ export default function Home() {
         </Link>
       </div>
 
-      <div className="relative z-10 mt-96 ml-10 space-y-8"> {/* Adjusted margin-top */}
+      <div className="relative z-10 mt-96 ml-10 space-y-8">
         <Link href="/design">
           <div className="relative w-64 h-32 transition-transform transform hover:scale-105 cursor-pointer">
-            <img src="/gallery.png" alt="Drawing Gallery" className="w-full h-full object-cover"/>
+            <img src="/gallery.png" alt="Drawing Gallery" className="w-full h-full object-cover" />
             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
               <span className="text-white text-lg font-bold">DRAWING GALLERY</span>
             </div>
@@ -48,7 +48,7 @@ export default function Home() {
         </Link>
         <Link href="/agents">
           <div className="relative w-64 h-32 transition-transform transform hover:scale-105 cursor-pointer">
-            <img src="/worldengine.png" alt="World Engine Simulation" className="w-full h-full object-cover"/>
+            <img src="/worldengine.png" alt="World Engine Simulation" className="w-full h-full object-cover" />
             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
               <span className="text-white text-lg font-bold">WORLD ENGINE SIMULATION</span>
             </div>
@@ -56,7 +56,7 @@ export default function Home() {
         </Link>
         <Link href="/recording">
           <div className="relative w-64 h-32 transition-transform transform hover:scale-105 cursor-pointer">
-            <img src="/recording.png" alt="Recording" className="w-full h-full object-cover"/>
+            <img src="/recording.png" alt="Recording" className="w-full h-full object-cover" />
             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
               <span className="text-white text-lg font-bold">RECORDING</span>
             </div>
@@ -66,7 +66,7 @@ export default function Home() {
 
       <div className={`text-white text-center text-sm mt-16 mb-16 z-10 w-full flex justify-center ${floatingTextVisible ? 'floating-text' : ''}`}>
         <div>
-          THIS JOURNEY OF A PROJECT TAKES ME BACK 30 YEARS. HOW WE DESIGNED THE FISH FARMS TO SUSTAIN THE WORLDS DEMAND....
+          THIS JOURNEY OF A PROJECT TAKES ME BACK 30 YEARS. HOW WE DESIGNED THE FISH FARMS TO SUSTAIN THE WORLD&apos;S DEMAND....
           <br />
           ...FIND OUT MORE ON WORLD ENGINE SIMULATION...
         </div>
