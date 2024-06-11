@@ -37,7 +37,7 @@ export default function Home() {
           Discover how Project FFF will replace beef with fish and change our future.
         </p>
         <Link href="/information">
-          <div className="bg-darkblue text-white py-3 px-6 shadow-md transition-transform transform hover:scale-105 cursor-pointer text-center" style={{ backgroundColor: "#000033", fontSize: "1.5rem", padding: "15px 40px", marginBottom: "100px" }}>
+          <div className="bg-gray-300 bg-opacity-70 text-white py-2 px-4 rounded-md shadow-md transition-transform transform hover:scale-105 cursor-pointer text-center font-bold text-lg">
             OUR SCENARIO
           </div>
         </Link>
@@ -45,30 +45,29 @@ export default function Home() {
 
       <div className="relative z-10 mt-96 ml-10 space-y-8">
         <Link href="/design">
-          <div className="relative w-64 h-20 bg-darkblue text-white flex items-center justify-center transition-transform transform hover:scale-105 cursor-pointer" style={{ backgroundColor: "#000033", fontSize: "1.5rem", padding: "15px 40px", marginBottom: "10px" }}>
-            DRAWING GALLERY
+          <div className="relative w-64 h-16 transition-transform transform hover:scale-105 cursor-pointer bg-gray-300 bg-opacity-70 rounded-md flex items-center justify-center mb-8 font-bold text-lg">
+            <span className="text-white">DRAWING GALLERY</span>
           </div>
         </Link>
         <Link href="/agents">
-          <div className="relative w-64 h-20 bg-darkblue text-white flex items-center justify-center transition-transform transform hover:scale-105 cursor-pointer" style={{ backgroundColor: "#000033", fontSize: "1.5rem", padding: "15px 40px", marginBottom: "10px" }}>
-            WORLD ENGINE SIMULATION
+          <div className="relative w-64 h-16 transition-transform transform hover:scale-105 cursor-pointer bg-gray-300 bg-opacity-70 rounded-md flex items-center justify-center mb-8 font-bold text-lg">
+            <span className="text-white">WORLD ENGINE SIMULATION</span>
           </div>
         </Link>
         <Link href="/recording">
-          <div className="relative w-64 h-20 bg-darkblue text-white flex items-center justify-center transition-transform transform hover:scale-105 cursor-pointer" style={{ backgroundColor: "#000033", fontSize: "1.5rem", padding: "15px 40px", marginBottom: "10px" }}>
-            RECORDING
+          <div className="relative w-64 h-16 transition-transform transform hover:scale-105 cursor-pointer bg-gray-300 bg-opacity-70 rounded-md flex items-center justify-center font-bold text-lg">
+            <span className="text-white">RECORDING</span>
           </div>
         </Link>
       </div>
 
-      <div className={`text-white text-center text-sm mt-16 mb-16 z-10 w-full flex justify-center ${floatingTextVisible ? 'floating-text' : ''}`} style={{ position: 'fixed', bottom: '0' }}>
+      <div className={`text-white text-center text-sm mt-16 mb-16 z-10 w-full flex justify-center ${floatingTextVisible ? 'floating-text' : ''}`}>
         <div>
-          THIS JOURNEY OF A PROJECT TAKES ME BACK 30 YEARS. HOW WE DESIGNED THE FISH FARMS TO SUSTAIN THE WORLD&apos;S DEMAND....
+          THIS JOURNEY TAKES YOU BACK 30 YEARS THROUGH THE EYES OF A DEDICATED TEAM THAT INITIATED A GROUNDBREAKING PROJECT TO CHANGE THE WORLD. EXPERIENCE HOW THEY OVERCAME IMMENSE CHALLENGES TO DESIGN FISH FARMS THAT SUSTAIN THE GLOBAL POPULATION.
           <br />
-          ...FIND OUT MORE ON WORLD ENGINE SIMULATION...
+          DISCOVER THE INTRICACIES OF THEIR PROCESS AND WATCH OUR WORLD ENGINE SIMULATION TO SEE THE IMPACT OF THEIR EFFORTS.
         </div>
       </div>
     </main>
   );
 }
-
