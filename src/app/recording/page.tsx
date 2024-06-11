@@ -8,14 +8,14 @@ const PageContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: url('/path-to-your-ocean-background-image.jpg') no-repeat center center/cover;
+  background: url('/recordback.png') no-repeat center center/cover;
   color: #fff;
   text-align: center;
   font-family: 'Arial', sans-serif;
 `;
 
 const ContentBox = styled.div`
-  background: rgba(0, 51, 102, 0.8);
+  background: rgba(128, 128, 128, 0.8);
   padding: 20px 40px;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
@@ -54,7 +54,7 @@ const Page = () => {
       <ContentBox>
         <Header>World Engine Simulation</Header>
         <TextBox>Click the link below to view the recording of the world engine simulation.</TextBox>
-        <LinkButton href="https://your-link-to-the-recording.com" target="_blank">View Recording</LinkButton>
+        <LinkButton href="https://youtu.be/Ifxbrv8lBhs" target="_blank">View Recording</LinkButton>
       </ContentBox>
     </PageContainer>
   );
