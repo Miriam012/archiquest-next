@@ -44,23 +44,35 @@ export default function Design() {
     <div className="flex flex-col items-center justify-center min-h-screen p-6 bg-gray-100">
       <h1 className="text-4xl font-bold mb-4 text-center">Design Gallery</h1>
       <p className="text-lg text-center mb-6 max-w-2xl">
-        In this gallery, you will find masterplans, sections, and plans of how the project will operate and run globally. You will also find some AI-generated images that reflect the project&apos;s design goals.
+        In this gallery, you will find masterplans, sections, and plans of how the project will operate and run globally. You will also find some AI-generated images that reflect the project's design goals.
       </p>
-      <ImageGallery
-        items={images}
-        startIndex={currentIndex}
-        showThumbnails={true}
-        showFullscreenButton={true}
-        showPlayButton={false}
-        onSlide={handleSlide}
-        renderItem={(item) => (
-          <Zoom>
-            <div className="relative w-full h-96">
-              <Image src={item.original} alt="" layout="fill" objectFit="contain" />
+      <div className="w-full max-w-4xl">
+        <ImageGallery
+          items={images}
+          startIndex={currentIndex}
+          showThumbnails={true}
+          showFullscreenButton={true}
+          showPlayButton={false}
+          onSlide={handleSlide}
+          renderItem={(item) => (
+            <Zoom>
+              <div className="relative w-full" style={{ aspectRatio: '16/9', height: 'auto' }}>
+                {item.original && (
+                  <Image src={item.original} alt="" layout="fill" objectFit="contain" />
+                )}
+              </div>
+            </Zoom>
+          )}
+          thumbnailPosition="bottom"
+          renderThumbInner={(item) => (
+            <div className="relative w-full" style={{ aspectRatio: '4/3', height: 'auto' }}>
+              {item.thumbnail && (
+                <Image src={item.thumbnail} alt="" layout="fill" objectFit="contain" />
+              )}
             </div>
-          </Zoom>
-        )}
-      />
+          )}
+        />
+      </div>
     </div>
   );
 }
