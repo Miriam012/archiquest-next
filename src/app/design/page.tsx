@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, SetStateAction } from "react";
 import ImageGallery from 'react-image-gallery';
 import Zoom from 'react-medium-image-zoom';
 import 'react-image-gallery/styles/css/image-gallery.css';
@@ -76,7 +76,7 @@ export default function Design() {
     });
   }, []);
 
-  const handleSlide = (index: number) => {
+  const handleSlide = (index: SetStateAction<number>) => {
     setCurrentIndex(index);
   };
 
@@ -84,9 +84,9 @@ export default function Design() {
     <div className="flex flex-col items-center justify-center min-h-screen p-6 bg-gray-100">
       <h1 className="text-4xl font-bold mb-4 text-center">Design Gallery</h1>
       <p className="text-lg text-center mb-6 max-w-2xl">
-      In this gallery, you will find an array of drawings that illustrate the evolution of the Fish For Food (F.F.F) OceanFarm project. Starting with a timeline of design iterations, the progression is displayed across the years 2019, 2024, 2038, 2042, 2046, and 2050. This timeline demonstrates the development and iterative process of the design, informed by both the World Simulation and the graph tool.
-The masterplan highlights the project's expansion from Norway to Chile and Canada, showcasing the growth and distribution of the Fish For Food initiative on a global scale. Additionally, the drawings emphasize the integration of the project with existing architecture through detailed sections.
-The first section, focusing on the Norway onshore aquaculture hub, vividly displays the processing and distribution services, offering insight into the operational intricacies of the hub. These drawings collectively illustrate the global impact and architectural integration of the Fish For Food project, emphasizing its development and expansion over time.
+        In this gallery, you will find an array of drawings that illustrate the evolution of the Fish For Food (F.F.F) OceanFarm project. Starting with a timeline of design iterations, the progression is displayed across the years 2019, 2024, 2038, 2042, 2046, and 2050. This timeline demonstrates the development and iterative process of the design, informed by both the World Simulation and the graph tool.
+        The masterplan highlights the project&apos;s expansion from Norway to Chile and Canada, showcasing the growth and distribution of the Fish For Food initiative on a global scale. Additionally, the drawings emphasize the integration of the project with existing architecture through detailed sections.
+        The first section, focusing on the Norway onshore aquaculture hub, vividly displays the processing and distribution services, offering insight into the operational intricacies of the hub. These drawings collectively illustrate the global impact and architectural integration of the Fish For Food project, emphasizing its development and expansion over time.
       </p>
       <div className="w-full max-w-4xl">
         <ImageGallery
