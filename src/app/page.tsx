@@ -18,10 +18,16 @@ export default function Home() {
   }, []);
 
   return (
-    <main
-      className="relative flex min-h-screen flex-col items-start justify-start p-10 bg-cover bg-center bg-no-repeat overflow-y-scroll"
-      style={{ backgroundImage: "url('/background.jpg')", backgroundSize: 'cover', backgroundAttachment: 'fixed' }}
-    >
+    <main className="relative flex min-h-screen flex-col items-start justify-start p-10 bg-cover bg-center bg-no-repeat overflow-y-scroll">
+      <video 
+        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        autoPlay 
+        muted 
+        loop 
+      >
+        <source src="/pp.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <div className="absolute top-20 left-10 max-w-md z-10">
         <h1 className="text-4xl font-bold mb-4 text-white">FISH FOR FOOD</h1>
         <p className="text-lg mb-4 text-white">
