@@ -37,40 +37,31 @@ export default function Home() {
           Discover how Project FFF will replace beef with fish and change our future.
         </p>
         <Link href="/information">
-          <div className="bg-gray-800 text-white py-2 px-4 shadow-md transition-transform transform hover:scale-105 cursor-pointer text-center">
-            Find out more here
+          <div className="bg-darkblue text-white py-3 px-6 shadow-md transition-transform transform hover:scale-105 cursor-pointer text-center" style={{ backgroundColor: "#000033", fontSize: "1.5rem", padding: "15px 40px", marginBottom: "100px" }}>
+            OUR SCENARIO
           </div>
         </Link>
       </div>
 
       <div className="relative z-10 mt-96 ml-10 space-y-8">
         <Link href="/design">
-          <div className="relative w-64 h-32 transition-transform transform hover:scale-105 cursor-pointer">
-            <img src="/gallery.png" alt="Drawing Gallery" className="w-full h-full object-cover" />
-            <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
-              <span className="text-white text-lg font-bold">DRAWING GALLERY</span>
-            </div>
+          <div className="relative w-64 h-20 bg-darkblue text-white flex items-center justify-center transition-transform transform hover:scale-105 cursor-pointer" style={{ backgroundColor: "#000033", fontSize: "1.5rem", padding: "15px 40px", marginBottom: "10px" }}>
+            DRAWING GALLERY
           </div>
         </Link>
         <Link href="/agents">
-          <div className="relative w-64 h-32 transition-transform transform hover:scale-105 cursor-pointer">
-            <img src="/worldengine.png" alt="World Engine Simulation" className="w-full h-full object-cover" />
-            <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
-              <span className="text-white text-lg font-bold">WORLD ENGINE SIMULATION</span>
-            </div>
+          <div className="relative w-64 h-20 bg-darkblue text-white flex items-center justify-center transition-transform transform hover:scale-105 cursor-pointer" style={{ backgroundColor: "#000033", fontSize: "1.5rem", padding: "15px 40px", marginBottom: "10px" }}>
+            WORLD ENGINE SIMULATION
           </div>
         </Link>
         <Link href="/recording">
-          <div className="relative w-64 h-32 transition-transform transform hover:scale-105 cursor-pointer">
-            <img src="/recording.png" alt="Recording" className="w-full h-full object-cover" />
-            <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
-              <span className="text-white text-lg font-bold">RECORDING</span>
-            </div>
+          <div className="relative w-64 h-20 bg-darkblue text-white flex items-center justify-center transition-transform transform hover:scale-105 cursor-pointer" style={{ backgroundColor: "#000033", fontSize: "1.5rem", padding: "15px 40px", marginBottom: "10px" }}>
+            RECORDING
           </div>
         </Link>
       </div>
 
-      <div className={`text-white text-center text-sm mt-16 mb-16 z-10 w-full flex justify-center ${floatingTextVisible ? 'floating-text' : ''}`}>
+      <div className={`text-white text-center text-sm mt-16 mb-16 z-10 w-full flex justify-center ${floatingTextVisible ? 'floating-text' : ''}`} style={{ position: 'fixed', bottom: '0' }}>
         <div>
           THIS JOURNEY OF A PROJECT TAKES ME BACK 30 YEARS. HOW WE DESIGNED THE FISH FARMS TO SUSTAIN THE WORLD&apos;S DEMAND....
           <br />
@@ -80,3 +71,4 @@ export default function Home() {
     </main>
   );
 }
+
